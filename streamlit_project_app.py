@@ -1,3 +1,8 @@
+import pandas as pd
+import streamlit as st
+import snowflake.connector as sf
+from sklearn import linear_model
+
 def main():
         conn = sf.connect(
                 account='sba23770',
