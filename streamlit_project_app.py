@@ -10,7 +10,8 @@ def main():
                 password='Federals_20',
                 database='ECONOMY_DATA_ATLAS',
                 schema='ECONOMY',
-                warehouse='COMPUTE_WH')
+                warehouse='COMPUTE_WH', 
+                role = 'ACCOUNTADMIN')
 
         # Inflation
         inflation_query = '''SELECT \"Date\", \"ECONOMY\".\"BEANIPA\".\"Value\" as \"infVal\" FROM \"ECONOMY\".\"BEANIPA\" WHERE \"Table Name\" = \'Price Indexes For Personal Consumption Expenditures By Major Type Of Product\'        AND \"Indicator Name\" = \'Personal consumption expenditures (PCE)\' AND \"Frequency\" = \'A\' ORDER BY \"Date\"'''
